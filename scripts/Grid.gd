@@ -29,7 +29,7 @@ func request_move(pawn, direction):
 			var target_tile_type = get_cell_atlas_coords(0, cell_target).x
 			if target_tile_type in [CellType.OBJECT, CellType.ACTOR]:
 				var target_pawn = get_cell_pawn(cell_target, target_tile_type)
-				print("Cell %s contains %s" % [cell_target, target_pawn.name])
+				#print("Cell %s contains %s" % [cell_target, target_pawn.name])
 				if not target_pawn.has_node("DialoguePlayer"):
 					return
 			# Assuming dialogue_ui is a valid NodePath leading to a UI element capable of showing dialogues

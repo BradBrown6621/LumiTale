@@ -60,6 +60,8 @@ func move(move_direction: Vector2):
 	
 	if not is_pulling:
 		for pushable in pushable_sprites:
+			print(pushable.global_position)
+			print(pushable.direction)
 			pushable.check_push(global_position, move_direction)
 	
 	if ray_cast_2d.is_colliding():

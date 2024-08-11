@@ -1,6 +1,6 @@
 [gd_scene load_steps=25 format=3 uid="uid://bqwotuvr0m3ei"]
 
-[ext_resource type="Script" path="res://scripts/pushable.gd" id="1_30ah8"]
+[ext_resource type="Script" path="res://scripts/pushable_pull.gd" id="1_bun3h"]
 [ext_resource type="Texture2D" uid="uid://d2d3h3ghw78h0" path="res://assets/Basic_Furniture.png" id="2_cf068"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_3rtmr"]
@@ -190,7 +190,7 @@ animations = [{
 size = Vector2(16, 16)
 
 [node name="Chair" type="Sprite2D" groups=["pushable"]]
-script = ExtResource("1_30ah8")
+script = ExtResource("1_bun3h")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_a2hcs")
