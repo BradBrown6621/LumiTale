@@ -1,7 +1,8 @@
-[gd_scene load_steps=25 format=3 uid="uid://b7aq8eamivh18"]
+[gd_scene load_steps=26 format=3 uid="uid://b7aq8eamivh18"]
 
 [ext_resource type="Texture2D" uid="uid://dpd6m4fyx3iq5" path="res://assets/Grass.png" id="1_w3kmo"]
 [ext_resource type="Texture2D" uid="uid://busqjj6o18246" path="res://assets/golemTilesheet.png" id="2_erad4"]
+[ext_resource type="Script" path="res://scenes/golem.gd" id="2_mjfb0"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_1jgyj"]
 atlas = ExtResource("1_w3kmo")
@@ -240,10 +241,11 @@ size = Vector2(16, 16)
 [node name="Golem" type="Sprite2D"]
 position = Vector2(16, 16)
 texture = SubResource("AtlasTexture_1jgyj")
+script = ExtResource("2_mjfb0")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_qc1ik")
-animation = &"idle_down"
+animation = &"walk_up"
 autoplay = "idle_down"
 
 [node name="RayCast2D" type="RayCast2D" parent="."]
