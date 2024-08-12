@@ -1,6 +1,5 @@
 [gd_scene load_steps=20 format=3 uid="uid://dcv2vj7rhpifv"]
 
-[ext_resource type="Texture2D" uid="uid://cqjvd62ngsby0" path="res://assets/Wooden_House_Walls_Tilset.png" id="1_d8l6t"]
 [ext_resource type="Texture2D" uid="uid://dpd6m4fyx3iq5" path="res://assets/Grass.png" id="2_r3jqb"]
 [ext_resource type="Texture2D" uid="uid://mu0yj0qbpnba" path="res://assets/Sprout Lands - Sprites - Basic pack/Tilesets/Wooden_House_Roof_Tilset.png" id="3_o7uyn"]
 [ext_resource type="Texture2D" uid="uid://btmnmt21vgb4h" path="res://assets/Sprout Lands - Sprites - Basic pack/Tilesets/Doors.png" id="4_tm2ru"]
@@ -11,8 +10,11 @@
 [ext_resource type="PackedScene" uid="uid://dj6vww320ih63" path="res://scenes/player.tscn" id="9_j8lmn"]
 [ext_resource type="PackedScene" uid="uid://bqwotuvr0m3ei" path="res://scenes/chair.tscn" id="10_5i6ek"]
 
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_1ukcs"]
+load_path = "res://.godot/imported/Wooden_House_Walls_Tilset.png-c437bffd4f151550fc332d175736304b.ctex"
+
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_q56d3"]
-texture = ExtResource("1_d8l6t")
+texture = SubResource("CompressedTexture2D_1ukcs")
 0:0/0 = 0
 0:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 0:0/0/physics_layer_0/angular_velocity = 0.0

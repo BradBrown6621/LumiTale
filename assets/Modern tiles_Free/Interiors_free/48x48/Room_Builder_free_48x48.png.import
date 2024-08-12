@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://ckgsqpc6wl4ia"
-path="res://.godot/imported/knight.png-b33800fb7ddfd7bcabc4517f1e9e68e8.ctex"
+uid="uid://cirtwwu37eos2"
+path="res://.godot/imported/Room_Builder_free_48x48.png-470318dd91d15a944b8285674d5f3a25.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/knight.png"
-dest_files=["res://.godot/imported/knight.png-b33800fb7ddfd7bcabc4517f1e9e68e8.ctex"]
+source_file="res://assets/Modern tiles_Free/Interiors_free/48x48/Room_Builder_free_48x48.png"
+dest_files=["res://.godot/imported/Room_Builder_free_48x48.png-470318dd91d15a944b8285674d5f3a25.ctex"]
 
 [params]
 
