@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="LumiTale"
-run/main_scene="res://scenes/levels/main.tscn"
+run/main_scene="res://scenes/levels/mainStage.tscn"
 config/features=PackedStringArray("4.2", "Mobile")
 config/icon="res://icon.svg"
 
@@ -57,4 +57,6 @@ pull={
 [rendering]
 
 textures/canvas_textures/default_texture_filter=0
-renderer/rendering_method="mobile"
+renderer/rendering_method="gl_compatibility"
+renderer/rendering_method.mobile="gl_compatibility"
+textures/vram_compression/import_s3tc_bptc=true

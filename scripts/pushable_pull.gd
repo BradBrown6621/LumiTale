@@ -1,6 +1,6 @@
 extends Sprite2D
 
-@onready var tile_map = $"../TileMap"
+@onready var tile_map = $"../../TileMap"
 @onready var animated_sprite_2d = $AnimatedSprite2D
 @onready var ray_cast = $RayCast2D
 
