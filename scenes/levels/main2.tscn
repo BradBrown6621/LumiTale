@@ -11,7 +11,6 @@
 [ext_resource type="PackedScene" uid="uid://bqwotuvr0m3ei" path="res://scenes/chair.tscn" id="10_5i6ek"]
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_1ukcs"]
-load_path = "res://.godot/imported/Wooden_House_Walls_Tilset.png-c437bffd4f151550fc332d175736304b.ctex"
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_q56d3"]
 texture = SubResource("CompressedTexture2D_1ukcs")

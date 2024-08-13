@@ -5,7 +5,7 @@ extends Sprite2D
 @onready var ray_cast = $RayCast2D
 
 var is_moving = false
-var direction = "down"
+var direction = "up"
 
 func _physics_process(delta):
 	if global_position == animated_sprite_2d.global_position:
