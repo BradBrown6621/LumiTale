@@ -1,122 +1,59 @@
-extends Sprite2D
+extends MoveableTile2D
+
 class_name Player
 
-@onready var tile_map = $"../TileMap"
-@onready var animated_sprite_2d = $AnimatedSprite2D
-@onready var ray_cast_2d = $RayCast2D
-@onready var pushable_sprites = get_tree().get_nodes_in_group("pushable")
+@onready var movement_direction = null
+@onready var facing_direction = movement_direction
+@onready var grabbed_object = null
 
-var is_moving = false
-var direction = "down"
-var is_pulling = false
-var pulled_object: Sprite2D = null
-var pull_direction: Vector2
-var ignore_raycast: bool = false
+@onready var animatedSprite2D = $AnimatedSprite2D
+@onready var golem = $"../Golem"
 
-func _physics_process(delta):
-	if global_position == animated_sprite_2d.global_position:
-		is_moving = false
-		animated_sprite_2d.play("idle_" + direction)
-		return
-	
-	animated_sprite_2d.play("walk_" + direction)
-	animated_sprite_2d.global_position = animated_sprite_2d.global_position.move_toward(global_position, 1)
-
-func _process(delta):
-	if is_moving:
-		return
-	
-	var move_direction = Vector2.ZERO
-	
-	if Input.is_action_pressed("right"):
-		move_direction.x += 1
-		if !is_pulling:
-			direction = "right"
-	elif Input.is_action_pressed("left"):
-		move_direction.x -= 1
-		if !is_pulling:
-			direction = "left"
-	elif Input.is_action_pressed("down"):
-		move_direction.y += 1
-		if !is_pulling:
-			direction = "down"
-	elif Input.is_action_pressed("up"):
-		move_direction.y -= 1
-		if !is_pulling:
-			direction = "up"
-	
-	if Input.is_action_just_pressed("pull"):
-		toggle_pull()
-	
-	if move_direction != Vector2.ZERO:
-		move(move_direction)
-
-func move(move_direction: Vector2):
-	var current_tile: Vector2i = tile_map.local_to_map(global_position)
-	var target_tile: Vector2i = current_tile + Vector2i(move_direction)
-	
-	ray_cast_2d.target_position = move_direction * 16
-	ray_cast_2d.force_raycast_update()
-	
-	if not is_pulling:
-		for pushable in pushable_sprites:
-			print(pushable.global_position)
-			print(pushable.direction)
-			pushable.check_push(global_position, move_direction)
-	
-	if ray_cast_2d.is_colliding():
-		toggle_pull()
-		return
-	
-	if is_pulling and pulled_object:
-		#pull_direction = move_direction  # Update pull direction
-		var pull_target = tile_map.map_to_local(tile_map.local_to_map(pulled_object.global_position) + Vector2i(move_direction))
-		if move_direction == -pull_direction:
-			ignore_raycast = true
-			pulled_object.move_to(pull_target, ignore_raycast)
+func _process(_delta):
+	# ADD ANIMATIONS FOR MOVEMENT
+	# ADD SOUNDS FOR MOVEMENT
+	if Input.is_action_just_pressed("player_right"):
+		movement_direction = "right"
+	elif Input.is_action_just_pressed("player_down"):
+		movement_direction = "down"
+	elif Input.is_action_just_pressed("player_left"):
+		movement_direction = "left"
+	elif Input.is_action_just_pressed("player_up"):
+		movement_direction = "up"
+	elif Input.is_action_just_pressed("player_grab"):
+		if not grabbed_object:
+			grabbed_object = getObject(facing_direction)
+			print(grabbed_object)
+			if not grabbed_object is CharacterBody2D:
+				grabbed_object = null
+			print("Grabbed object: ", grabbed_object)
 		else:
-			ignore_raycast= false
-			pulled_object.move_to(pull_target, ignore_raycast)
-		
-	is_moving = true
-	global_position = tile_map.map_to_local(target_tile)
-	animated_sprite_2d.global_position = tile_map.map_to_local(current_tile)
-	# If pulled_object and player are not adjacent toggle_pull
-	if is_pulling:
-		var dx = abs(pulled_object.global_position.x - global_position.x)
-		var dy = abs(pulled_object.global_position.y - global_position.y)
-		prints("dx:", dx)
-		prints("dy:", dy)
-		if (dx >= 16 && dy >= 16):
-			print("object no longer adjacent")
-			toggle_pull()
-	
-
-func toggle_pull():
-	if is_pulling:
-		is_pulling = false
-		print("not pulling")
-		pulled_object = null
-		pull_direction = Vector2.ZERO
+			grabbed_object = null
+	elif Input.is_action_just_pressed("player_golem_activate"):
+		golem.activate()
 	else:
-		var direction_vector = get_direction_vector()
-		var facing_tile = tile_map.local_to_map(global_position) + Vector2i(direction_vector)
-		for pushable in pushable_sprites:
-			if tile_map.local_to_map(pushable.global_position) == facing_tile:
-				is_pulling = true
-				print("pulling")
-				pulled_object = pushable
-				pull_direction = direction_vector
-				break
+		movement_direction = null
 
-func get_direction_vector() -> Vector2:
-	match direction:
-		"right":
-			return Vector2.RIGHT
-		"left":
-			return Vector2.LEFT
-		"down":
-			return Vector2.DOWN
-		"up":
-			return Vector2.UP
-	return Vector2.ZERO
+	if movement_direction != null:
+		
+		print("Facing: ", facing_direction, " Moving Direction:", movement_direction)
+		var objectPlayerFacing = getObject(facing_direction)
+		# Check if object attempting to push is not grabbed
+		if objectPlayerFacing != null and objectPlayerFacing != grabbed_object:
+		# Attempt to push object and move
+			push(movement_direction)
+		# Otherwise, attempt to push grabbed object
+		elif grabbed_object:
+			if (movement_direction == "up" and facing_direction == "down") or (movement_direction == "down" and facing_direction == "up") or (movement_direction == "right" and facing_direction == "left") or  (movement_direction == "left" and facing_direction == "right"):
+				# If we need to pull a tile, we just initiate a push on that tile and move the tile being "pulled"
+				grabbed_object.push(movement_direction)
+			elif movement_direction == facing_direction:
+				grabbed_object.push(movement_direction)
+			else:
+				push(movement_direction)
+				
+		else:
+			push(movement_direction)
+
+		facing_direction = movement_direction
+	super._process(_delta)

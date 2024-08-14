@@ -1,7 +1,10 @@
 [gd_scene load_steps=21 format=3 uid="uid://dj6vww320ih63"]
 
-[ext_resource type="Script" path="res://scripts/player.gd" id="1_2giog"]
+[ext_resource type="Script" path="res://scripts/Player.gd" id="1_itbiy"]
 [ext_resource type="Texture2D" uid="uid://dg00x8qddk6nw" path="res://assets/Basic Charakter Spritesheet.png" id="2_k7x7o"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_3lauu"]
+size = Vector2(16, 16)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_u5cm6"]
 atlas = ExtResource("2_k7x7o")
@@ -158,26 +161,15 @@ animations = [{
 "speed": 5.0
 }]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_3lauu"]
-size = Vector2(16, 16)
+[node name="CharacterBody2D" type="CharacterBody2D"]
+script = ExtResource("1_itbiy")
 
-[node name="Player" type="Sprite2D"]
-position = Vector2(16, 32)
-script = ExtResource("1_2giog")
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+z_as_relative = false
+shape = SubResource("RectangleShape2D_3lauu")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_0578i")
 animation = &"idle_down"
 
 [node name="Camera2D" type="Camera2D" parent="AnimatedSprite2D"]
-position = Vector2(0, -16)
-
-[node name="RayCast2D" type="RayCast2D" parent="."]
-target_position = Vector2(0, 16)
-collide_with_areas = true
-
-[node name="Area2D" type="Area2D" parent="."]
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
-z_as_relative = false
-shape = SubResource("RectangleShape2D_3lauu")

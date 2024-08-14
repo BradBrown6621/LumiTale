@@ -1,6 +1,6 @@
 [gd_scene load_steps=26 format=3 uid="uid://bqwotuvr0m3ei"]
 
-[ext_resource type="Script" path="res://scripts/pushable_pull.gd" id="1_bun3h"]
+[ext_resource type="Script" path="res://scripts/MoveableTile2D.gd" id="1_34hsx"]
 [ext_resource type="Texture2D" uid="uid://d2d3h3ghw78h0" path="res://assets/Basic_Furniture.png" id="2_cf068"]
 [ext_resource type="Texture2D" uid="uid://cqlntjxkach4a" path="res://assets/boothTileSheet.png" id="2_chn2e"]
 
@@ -187,22 +187,16 @@ animations = [{
 "speed": 10.0
 }]
 
-[sub_resource type="CircleShape2D" id="CircleShape2D_nwdvm"]
-radius = 5.09902
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_wot7n"]
+size = Vector2(16, 16)
 
-[node name="Chair" type="Sprite2D" groups=["pushable"]]
-script = ExtResource("1_bun3h")
+[node name="Chair" type="CharacterBody2D" groups=["pushable"]]
+script = ExtResource("1_34hsx")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_a2hcs")
 animation = &"idle_down"
 
-[node name="RayCast2D" type="RayCast2D" parent="."]
-target_position = Vector2(0, 8)
-collide_with_areas = true
-
-[node name="Area2D" type="Area2D" parent="."]
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 z_as_relative = false
-shape = SubResource("CircleShape2D_nwdvm")
+shape = SubResource("RectangleShape2D_wot7n")
