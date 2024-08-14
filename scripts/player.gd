@@ -12,14 +12,30 @@ class_name Player
 func _process(_delta):
 	# ADD ANIMATIONS FOR MOVEMENT
 	# ADD SOUNDS FOR MOVEMENT
-	if Input.is_action_just_pressed("player_right"):
+	if Input.is_action_just_pressed("player_right", true):
 		movement_direction = "right"
-	elif Input.is_action_just_pressed("player_down"):
+		animatedSprite2D.play("walk_right")
+	elif Input.is_action_just_pressed("player_shift_right", true):
+		facing_direction = "right"
+		animatedSprite2D.play("idle_right")
+	elif Input.is_action_just_pressed("player_down", true):
 		movement_direction = "down"
-	elif Input.is_action_just_pressed("player_left"):
+		animatedSprite2D.play("walk_down")
+	elif Input.is_action_just_pressed("player_shift_down", true):
+		facing_direction = "down"
+		animatedSprite2D.play("idle_down")
+	elif Input.is_action_just_pressed("player_left", true):
 		movement_direction = "left"
-	elif Input.is_action_just_pressed("player_up"):
+		animatedSprite2D.play("walk_left")
+	elif Input.is_action_just_pressed("player_shift_left", true):
+		facing_direction = "left"
+		animatedSprite2D.play("idle_left")
+	elif Input.is_action_just_pressed("player_up", true):
 		movement_direction = "up"
+		animatedSprite2D.play("walk_up")
+	elif Input.is_action_just_pressed("player_shift_up", true):
+		facing_direction = "up"
+		animatedSprite2D.play("idle_up")
 	elif Input.is_action_just_pressed("player_grab"):
 		if not grabbed_object:
 			grabbed_object = getObject(facing_direction)
