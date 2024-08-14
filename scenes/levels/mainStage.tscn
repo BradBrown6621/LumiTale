@@ -1,4 +1,4 @@
-[gd_scene load_steps=36 format=3 uid="uid://cbwu42dg2e83e"]
+[gd_scene load_steps=37 format=3 uid="uid://cbwu42dg2e83e"]
 
 [ext_resource type="Texture2D" uid="uid://d2xxqa5vxkw0l" path="res://assets/Texture/TX Tileset Stone Ground.png" id="1_momv6"]
 [ext_resource type="Texture2D" uid="uid://cojytxmrjmf8h" path="res://assets/Grass.png" id="2_7eahj"]
@@ -17,6 +17,7 @@
 [ext_resource type="PackedScene" uid="uid://bqwotuvr0m3ei" path="res://scenes/chair.tscn" id="13_xbvv8"]
 [ext_resource type="PackedScene" uid="uid://kccoyxxar0gj" path="res://scenes/WinTile.tscn" id="16_2prn8"]
 [ext_resource type="PackedScene" uid="uid://b7aq8eamivh18" path="res://scenes/golem.tscn" id="16_orf58"]
+[ext_resource type="PackedScene" uid="uid://dqcfwor1orokc" path="res://scenes/pause.tscn" id="18_caks6"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_hudkr"]
 texture = ExtResource("1_momv6")
@@ -9424,3 +9425,8 @@ format = 2
 layer_0/tile_data = PackedInt32Array(0, 196608, 8, 524343, 655360, 44, 917545, 196608, 8, 917541, 196608, 8)
 
 [node name="UI" type="Node" parent="."]
+
+[node name="CanvasLayer" type="CanvasLayer" parent="UI"]
+
+[node name="Pause Menu" parent="UI/CanvasLayer" instance=ExtResource("18_caks6")]
+visible = false
