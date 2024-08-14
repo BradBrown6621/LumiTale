@@ -177,3 +177,4 @@ sprite_frames = SubResource("SpriteFrames_0578i")
 animation = &"idle_down"
 
 [node name="Camera2D" type="Camera2D" parent="AnimatedSprite2D"]
+zoom = Vector2(3, 3)

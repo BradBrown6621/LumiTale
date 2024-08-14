@@ -1,4 +1,4 @@
-[gd_scene load_steps=35 format=3 uid="uid://cbwu42dg2e83e"]
+[gd_scene load_steps=36 format=3 uid="uid://cbwu42dg2e83e"]
 
 [ext_resource type="Texture2D" uid="uid://d2xxqa5vxkw0l" path="res://assets/Texture/TX Tileset Stone Ground.png" id="1_momv6"]
 [ext_resource type="Texture2D" uid="uid://cojytxmrjmf8h" path="res://assets/Grass.png" id="2_7eahj"]
@@ -16,6 +16,7 @@
 [ext_resource type="PackedScene" uid="uid://dj6vww320ih63" path="res://scenes/player.tscn" id="12_thmc7"]
 [ext_resource type="PackedScene" uid="uid://bqwotuvr0m3ei" path="res://scenes/chair.tscn" id="13_xbvv8"]
 [ext_resource type="PackedScene" uid="uid://kccoyxxar0gj" path="res://scenes/WinTile.tscn" id="16_2prn8"]
+[ext_resource type="PackedScene" uid="uid://b7aq8eamivh18" path="res://scenes/golem.tscn" id="16_orf58"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_hudkr"]
 texture = ExtResource("1_momv6")
@@ -9320,6 +9321,9 @@ position = Vector2(184, 184)
 
 [node name="Chair" parent="TileMap/Chairs" instance=ExtResource("13_xbvv8")]
 position = Vector2(136, 152)
+
+[node name="Golem" parent="TileMap" instance=ExtResource("16_orf58")]
+position = Vector2(88, 40)
 
 [node name="WinTiles" type="Node" parent="."]
 
