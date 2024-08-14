@@ -37,7 +37,8 @@ LumiTale was crafted using **Godot Engine 4.2.2.0** for **Windows Desktop x86_64
    - **Push Objects**: Move into an object's space to push it. Pushed objects will align with your direction.
    - **Grab Objects**: Press `SPACEBAR` when facing a movable object to grab and drag it, maintaining its original direction.
    - **Rotate Objects**: Face a movable object and use the controls to rotate it.
-   - **Program the Golem**: Press `TAB`, enter a sequence of up to 16 direction characters, then press `TAB` again to execute the command.
+   - **Pause**: Pressing the `ESC` key will pause and unpause the game.
+   
 
 ### Beta Challenge
 
@@ -45,7 +46,7 @@ LumiTale was crafted using **Godot Engine 4.2.2.0** for **Windows Desktop x86_64
 - **Toggle Win Conditions**: Press `Q` to reveal placement and direction tiles for chair placement.
 
 ### Special Character: The Golem
-
+- **Program the Golem**: Press `TAB`, enter a sequence of up to 16 direction characters, then press `TAB` again to execute the command.
 - **Powering Up**: Press `(G)` to activate the Golem.
 - **Programming**: After pressing `(TAB)`, input a string of up to 16 direction characters as instructions for the Golem. Press `(TAB)` again to execute.
 - **Powering Down**: Press `(G)` to deactivate the Golem, immobilizing it.
