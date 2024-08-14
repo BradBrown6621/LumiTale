@@ -2,7 +2,7 @@ extends MoveableTile2D
 
 class_name Player
 
-@onready var movement_direction = null
+@onready var movement_direction = "down"
 @onready var facing_direction = movement_direction
 @onready var grabbed_object = null
 
@@ -52,7 +52,6 @@ func _process(_delta):
 
 	if movement_direction != null:
 		
-		print("Facing: ", facing_direction, " Moving Direction:", movement_direction)
 		var objectPlayerFacing = getObject(facing_direction)
 		# Check if object attempting to push is not grabbed
 		if objectPlayerFacing != null and objectPlayerFacing != grabbed_object:
@@ -65,8 +64,10 @@ func _process(_delta):
 				grabbed_object.push(movement_direction)
 			elif movement_direction == facing_direction:
 				grabbed_object.push(movement_direction)
+				push(movement_direction)
 			else:
 				push(movement_direction)
+				grabbed_object.push(movement_direction)
 				
 		else:
 			push(movement_direction)

@@ -1,4 +1,4 @@
-[gd_scene load_steps=34 format=3 uid="uid://cbwu42dg2e83e"]
+[gd_scene load_steps=35 format=3 uid="uid://cbwu42dg2e83e"]
 
 [ext_resource type="Texture2D" uid="uid://d2xxqa5vxkw0l" path="res://assets/Texture/TX Tileset Stone Ground.png" id="1_momv6"]
 [ext_resource type="Texture2D" uid="uid://dpd6m4fyx3iq5" path="res://assets/Grass.png" id="2_7eahj"]
@@ -15,6 +15,7 @@
 [ext_resource type="Texture2D" uid="uid://2dcmlghraevo" path="res://assets/AtlasBrickMottled.png" id="10_h8sxi"]
 [ext_resource type="PackedScene" uid="uid://dj6vww320ih63" path="res://scenes/player.tscn" id="12_thmc7"]
 [ext_resource type="PackedScene" uid="uid://bqwotuvr0m3ei" path="res://scenes/chair.tscn" id="13_xbvv8"]
+[ext_resource type="PackedScene" uid="uid://kccoyxxar0gj" path="res://scenes/WinTile.tscn" id="16_2prn8"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_hudkr"]
 texture = ExtResource("1_momv6")
@@ -9211,7 +9212,7 @@ texture = ExtResource("2_dcp82")
 physics_layer_0/collision_layer = 1
 sources/0 = SubResource("TileSetAtlasSource_8ycfh")
 
-[node name="Node2D" type="Node2D"]
+[node name="Node2D" type="Node2D" groups=["pushables"]]
 position = Vector2(8, -8)
 
 [node name="Ground" type="TileMap" parent="."]
@@ -9493,6 +9494,14 @@ position = Vector2(136, 56)
 
 [node name="Chair9" parent="TileMap/Chairs" instance=ExtResource("13_xbvv8")]
 position = Vector2(136, 72)
+
+[node name="Node" type="Node" parent="TileMap"]
+
+[node name="WinTile" parent="TileMap/Node" instance=ExtResource("16_2prn8")]
+position = Vector2(168, 40)
+
+[node name="WinTile2" parent="TileMap/Node" instance=ExtResource("16_2prn8")]
+position = Vector2(152, 40)
 
 [node name="Decor" type="TileMap" parent="."]
 position = Vector2(8, 8)
