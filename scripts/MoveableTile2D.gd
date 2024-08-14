@@ -4,6 +4,7 @@ class_name MoveableTile2D
 @onready var currentPos = self.position
 @onready var newPos = currentPos
 @onready var isMoving = true
+@onready var face = "up"
 
 var SPEED = 4
 var TILESIZE = 16
@@ -25,6 +26,7 @@ func move(direction):
 		elif direction == "up":
 			newPos[1] += -TILESIZE
 			isMoving = true
+		self.face = direction
 
 func getObject(facing):
 	var raycast = RayCast2D.new()

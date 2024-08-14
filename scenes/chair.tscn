@@ -1,6 +1,6 @@
 [gd_scene load_steps=26 format=3 uid="uid://bqwotuvr0m3ei"]
 
-[ext_resource type="Script" path="res://scripts/MoveableTile2D.gd" id="1_34hsx"]
+[ext_resource type="Script" path="res://scenes/chair.gd" id="1_4yifx"]
 [ext_resource type="Texture2D" uid="uid://d2d3h3ghw78h0" path="res://assets/Basic_Furniture.png" id="2_cf068"]
 [ext_resource type="Texture2D" uid="uid://cqlntjxkach4a" path="res://assets/boothTileSheet.png" id="2_chn2e"]
 
@@ -193,7 +193,7 @@ size = Vector2(16, 16)
 [node name="Chair" type="CharacterBody2D" groups=["pushable"]]
 top_level = true
 z_index = 1
-script = ExtResource("1_34hsx")
+script = ExtResource("1_4yifx")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_a2hcs")
