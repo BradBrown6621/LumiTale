@@ -61,9 +61,9 @@ We're excited about the potential of LumiTale and have some exciting updates pla
 
 ## 🤝 The Team Behind LumiTale
 
-- **UI and Sound**: Kiko Sprague
-- **Pixel Art and Game Physics**: Brad Brown
-- **Game Physics and Map Design**: Nathan Rhys
+- **UI and Sound**: Kiko Sprague - ksprague0592@gmail.com
+- **Pixel Art and Game Physics**: Brad Brown - keepforeverstrong@gmail.com
+- **Game Physics and Map Design**: Nathan Rhys - nathan.rhys@atlasschool.com
 
 ---
 
