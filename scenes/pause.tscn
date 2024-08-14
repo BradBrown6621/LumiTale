@@ -1,0 +1,86 @@
+[gd_scene load_steps=4 format=3 uid="uid://dqcfwor1orokc"]
+
+[ext_resource type="Script" path="res://scripts/pause.gd" id="1_wkgvi"]
+[ext_resource type="Texture2D" uid="uid://c4hpkm226idr4" path="res://assets/sprites/myfirstart.png" id="2_6kkwe"]
+
+[sub_resource type="SystemFont" id="SystemFont_h7eqx"]
+font_names = PackedStringArray("Britannic")
+subpixel_positioning = 0
+
+[node name="Pause Menu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_wkgvi")
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 12
+theme_override_constants/margin_top = 12
+theme_override_constants/margin_right = 12
+theme_override_constants/margin_bottom = 12
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer"]
+layout_mode = 2
+
+[node name="Separator" type="Control" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.642078, 0.343251, 0.0176857, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_x = 5
+theme_override_constants/shadow_offset_y = 5
+theme_override_constants/outline_size = 24
+theme_override_fonts/font = SubResource("SystemFont_h7eqx")
+theme_override_font_sizes/font_size = 64
+text = "GAME PAUSED"
+horizontal_alignment = 1
+
+[node name="HBoxContainer" type="HBoxContainer" parent="MarginContainer"]
+layout_mode = 2
+alignment = 1
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer/HBoxContainer"]
+layout_mode = 2
+theme_override_constants/separation = 6
+alignment = 1
+
+[node name="Sprite2D" type="Sprite2D" parent="MarginContainer/HBoxContainer/VBoxContainer"]
+position = Vector2(33, 330)
+scale = Vector2(0.698048, 0.434796)
+texture = ExtResource("2_6kkwe")
+region_enabled = true
+region_rect = Rect2(781, 15, 183, 75)
+
+[node name="Sprite2D2" type="Sprite2D" parent="MarginContainer/HBoxContainer/VBoxContainer"]
+position = Vector2(33, 293)
+scale = Vector2(0.698048, 0.434796)
+texture = ExtResource("2_6kkwe")
+region_enabled = true
+region_rect = Rect2(781, 15, 183, 75)
+
+[node name="Resume" type="Button" parent="MarginContainer/HBoxContainer/VBoxContainer"]
+modulate = Color(0, 0, 0, 1)
+layout_mode = 2
+text = "Resume"
+flat = true
+
+[node name="Quit" type="Button" parent="MarginContainer/HBoxContainer/VBoxContainer"]
+modulate = Color(0, 0, 0, 1)
+layout_mode = 2
+text = "Quit"
+flat = true
+
+[connection signal="pressed" from="MarginContainer/HBoxContainer/VBoxContainer/Resume" to="." method="_on_start_pressed"]
+[connection signal="pressed" from="MarginContainer/HBoxContainer/VBoxContainer/Quit" to="." method="_on_quit_pressed"]
