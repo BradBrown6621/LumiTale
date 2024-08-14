@@ -30,7 +30,7 @@ LumiTale was crafted using **Godot Engine 4.2.2.0** for **Windows Desktop x86_64
 
 1. **Download**: Simply download the `LumiTale.exe` and `LumiTale.pck` files to your desktop.
 2. **Open**: `LumiTale.exe` and the game will launch.
-3. **Start**: Click 'Start' on the menu to begin your adventure at the familiar Atlas School scene.
+3. **Start**: Click 'Start' on the menu to begin your adventure at a familiar Atlas School scene.
 4. **Controls**:
    - **Movement**: Use the arrow keys (or WASD) to navigate.
    - **Change Direction**: Press `SHIFT` + directional key to change direction without moving.
