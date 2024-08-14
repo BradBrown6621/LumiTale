@@ -9232,276 +9232,186 @@ position = Vector2(72, 40)
 [node name="Chairs" type="Node" parent="TileMap"]
 
 [node name="Chair2" parent="TileMap/Chairs" instance=ExtResource("13_xbvv8")]
-position = Vector2(88, 56)
-
-[node name="Chair3" parent="TileMap/Chairs" instance=ExtResource("13_xbvv8")]
-position = Vector2(56, 56)
-
-[node name="Chair4" parent="TileMap/Chairs" instance=ExtResource("13_xbvv8")]
-position = Vector2(24, 56)
-
-[node name="Chair5" parent="TileMap/Chairs" instance=ExtResource("13_xbvv8")]
-position = Vector2(152, 56)
-
-[node name="Chair6" parent="TileMap/Chairs" instance=ExtResource("13_xbvv8")]
-position = Vector2(120, 56)
-
-[node name="Chair7" parent="TileMap/Chairs" instance=ExtResource("13_xbvv8")]
-position = Vector2(72, 56)
-
-[node name="Chair8" parent="TileMap/Chairs" instance=ExtResource("13_xbvv8")]
-position = Vector2(40, 56)
-
-[node name="Chair10" parent="TileMap/Chairs" instance=ExtResource("13_xbvv8")]
-position = Vector2(88, 72)
-
-[node name="Chair11" parent="TileMap/Chairs" instance=ExtResource("13_xbvv8")]
-position = Vector2(56, 72)
-
-[node name="Chair12" parent="TileMap/Chairs" instance=ExtResource("13_xbvv8")]
-position = Vector2(24, 72)
-
-[node name="Chair13" parent="TileMap/Chairs" instance=ExtResource("13_xbvv8")]
-position = Vector2(152, 72)
-
-[node name="Chair14" parent="TileMap/Chairs" instance=ExtResource("13_xbvv8")]
-position = Vector2(120, 72)
-
-[node name="Chair15" parent="TileMap/Chairs" instance=ExtResource("13_xbvv8")]
-position = Vector2(72, 72)
-
-[node name="Chair16" parent="TileMap/Chairs" instance=ExtResource("13_xbvv8")]
-position = Vector2(40, 72)
-
-[node name="Chair17" parent="TileMap/Chairs" instance=ExtResource("13_xbvv8")]
-position = Vector2(136, 88)
-
-[node name="Chair18" parent="TileMap/Chairs" instance=ExtResource("13_xbvv8")]
-position = Vector2(88, 88)
-
-[node name="Chair19" parent="TileMap/Chairs" instance=ExtResource("13_xbvv8")]
-position = Vector2(56, 88)
-
-[node name="Chair20" parent="TileMap/Chairs" instance=ExtResource("13_xbvv8")]
-position = Vector2(24, 88)
-
-[node name="Chair21" parent="TileMap/Chairs" instance=ExtResource("13_xbvv8")]
-position = Vector2(152, 88)
-
-[node name="Chair22" parent="TileMap/Chairs" instance=ExtResource("13_xbvv8")]
-position = Vector2(120, 88)
-
-[node name="Chair23" parent="TileMap/Chairs" instance=ExtResource("13_xbvv8")]
-position = Vector2(72, 88)
-
-[node name="Chair24" parent="TileMap/Chairs" instance=ExtResource("13_xbvv8")]
-position = Vector2(40, 88)
-
-[node name="Chair25" parent="TileMap/Chairs" instance=ExtResource("13_xbvv8")]
-position = Vector2(136, 104)
-
-[node name="Chair26" parent="TileMap/Chairs" instance=ExtResource("13_xbvv8")]
-position = Vector2(88, 104)
-
-[node name="Chair27" parent="TileMap/Chairs" instance=ExtResource("13_xbvv8")]
-position = Vector2(56, 104)
-
-[node name="Chair28" parent="TileMap/Chairs" instance=ExtResource("13_xbvv8")]
-position = Vector2(24, 104)
-
-[node name="Chair29" parent="TileMap/Chairs" instance=ExtResource("13_xbvv8")]
-position = Vector2(152, 104)
-
-[node name="Chair30" parent="TileMap/Chairs" instance=ExtResource("13_xbvv8")]
-position = Vector2(120, 104)
-
-[node name="Chair31" parent="TileMap/Chairs" instance=ExtResource("13_xbvv8")]
-position = Vector2(72, 104)
-
-[node name="Chair32" parent="TileMap/Chairs" instance=ExtResource("13_xbvv8")]
-position = Vector2(40, 104)
-
-[node name="Chair33" parent="TileMap/Chairs" instance=ExtResource("13_xbvv8")]
-position = Vector2(136, 152)
-
-[node name="Chair34" parent="TileMap/Chairs" instance=ExtResource("13_xbvv8")]
 position = Vector2(88, 152)
 
-[node name="Chair35" parent="TileMap/Chairs" instance=ExtResource("13_xbvv8")]
+[node name="Chair3" parent="TileMap/Chairs" instance=ExtResource("13_xbvv8")]
 position = Vector2(56, 152)
 
-[node name="Chair36" parent="TileMap/Chairs" instance=ExtResource("13_xbvv8")]
+[node name="Chair4" parent="TileMap/Chairs" instance=ExtResource("13_xbvv8")]
 position = Vector2(24, 152)
 
-[node name="Chair37" parent="TileMap/Chairs" instance=ExtResource("13_xbvv8")]
+[node name="Chair5" parent="TileMap/Chairs" instance=ExtResource("13_xbvv8")]
 position = Vector2(152, 152)
 
-[node name="Chair38" parent="TileMap/Chairs" instance=ExtResource("13_xbvv8")]
+[node name="Chair6" parent="TileMap/Chairs" instance=ExtResource("13_xbvv8")]
 position = Vector2(120, 152)
 
-[node name="Chair39" parent="TileMap/Chairs" instance=ExtResource("13_xbvv8")]
+[node name="Chair7" parent="TileMap/Chairs" instance=ExtResource("13_xbvv8")]
 position = Vector2(72, 152)
 
-[node name="Chair40" parent="TileMap/Chairs" instance=ExtResource("13_xbvv8")]
+[node name="Chair8" parent="TileMap/Chairs" instance=ExtResource("13_xbvv8")]
 position = Vector2(40, 152)
 
-[node name="Chair41" parent="TileMap/Chairs" instance=ExtResource("13_xbvv8")]
+[node name="Chair17" parent="TileMap/Chairs" instance=ExtResource("13_xbvv8")]
 position = Vector2(136, 168)
 
-[node name="Chair42" parent="TileMap/Chairs" instance=ExtResource("13_xbvv8")]
+[node name="Chair18" parent="TileMap/Chairs" instance=ExtResource("13_xbvv8")]
 position = Vector2(88, 168)
 
-[node name="Chair43" parent="TileMap/Chairs" instance=ExtResource("13_xbvv8")]
+[node name="Chair19" parent="TileMap/Chairs" instance=ExtResource("13_xbvv8")]
 position = Vector2(56, 168)
 
-[node name="Chair44" parent="TileMap/Chairs" instance=ExtResource("13_xbvv8")]
+[node name="Chair20" parent="TileMap/Chairs" instance=ExtResource("13_xbvv8")]
 position = Vector2(24, 168)
 
-[node name="Chair45" parent="TileMap/Chairs" instance=ExtResource("13_xbvv8")]
+[node name="Chair21" parent="TileMap/Chairs" instance=ExtResource("13_xbvv8")]
 position = Vector2(152, 168)
 
-[node name="Chair46" parent="TileMap/Chairs" instance=ExtResource("13_xbvv8")]
+[node name="Chair22" parent="TileMap/Chairs" instance=ExtResource("13_xbvv8")]
 position = Vector2(120, 168)
 
-[node name="Chair47" parent="TileMap/Chairs" instance=ExtResource("13_xbvv8")]
+[node name="Chair23" parent="TileMap/Chairs" instance=ExtResource("13_xbvv8")]
 position = Vector2(72, 168)
 
-[node name="Chair48" parent="TileMap/Chairs" instance=ExtResource("13_xbvv8")]
+[node name="Chair24" parent="TileMap/Chairs" instance=ExtResource("13_xbvv8")]
 position = Vector2(40, 168)
 
 [node name="Chair49" parent="TileMap/Chairs" instance=ExtResource("13_xbvv8")]
-position = Vector2(136, 120)
-
-[node name="Chair50" parent="TileMap/Chairs" instance=ExtResource("13_xbvv8")]
-position = Vector2(88, 120)
-
-[node name="Chair51" parent="TileMap/Chairs" instance=ExtResource("13_xbvv8")]
-position = Vector2(56, 120)
-
-[node name="Chair52" parent="TileMap/Chairs" instance=ExtResource("13_xbvv8")]
-position = Vector2(24, 120)
-
-[node name="Chair53" parent="TileMap/Chairs" instance=ExtResource("13_xbvv8")]
-position = Vector2(152, 120)
-
-[node name="Chair54" parent="TileMap/Chairs" instance=ExtResource("13_xbvv8")]
-position = Vector2(120, 120)
-
-[node name="Chair55" parent="TileMap/Chairs" instance=ExtResource("13_xbvv8")]
-position = Vector2(72, 120)
-
-[node name="Chair56" parent="TileMap/Chairs" instance=ExtResource("13_xbvv8")]
-position = Vector2(40, 120)
-
-[node name="Chair57" parent="TileMap/Chairs" instance=ExtResource("13_xbvv8")]
 position = Vector2(136, 184)
 
-[node name="Chair58" parent="TileMap/Chairs" instance=ExtResource("13_xbvv8")]
+[node name="Chair50" parent="TileMap/Chairs" instance=ExtResource("13_xbvv8")]
 position = Vector2(88, 184)
 
-[node name="Chair59" parent="TileMap/Chairs" instance=ExtResource("13_xbvv8")]
+[node name="Chair51" parent="TileMap/Chairs" instance=ExtResource("13_xbvv8")]
 position = Vector2(56, 184)
 
-[node name="Chair60" parent="TileMap/Chairs" instance=ExtResource("13_xbvv8")]
+[node name="Chair52" parent="TileMap/Chairs" instance=ExtResource("13_xbvv8")]
 position = Vector2(24, 184)
 
-[node name="Chair61" parent="TileMap/Chairs" instance=ExtResource("13_xbvv8")]
+[node name="Chair53" parent="TileMap/Chairs" instance=ExtResource("13_xbvv8")]
 position = Vector2(152, 184)
 
+[node name="Chair54" parent="TileMap/Chairs" instance=ExtResource("13_xbvv8")]
+position = Vector2(120, 184)
+
+[node name="Chair55" parent="TileMap/Chairs" instance=ExtResource("13_xbvv8")]
+position = Vector2(72, 184)
+
+[node name="Chair56" parent="TileMap/Chairs" instance=ExtResource("13_xbvv8")]
+position = Vector2(40, 184)
+
 [node name="Chair65" parent="TileMap/Chairs" instance=ExtResource("13_xbvv8")]
-position = Vector2(168, 56)
-
-[node name="Chair66" parent="TileMap/Chairs" instance=ExtResource("13_xbvv8")]
-position = Vector2(168, 72)
-
-[node name="Chair67" parent="TileMap/Chairs" instance=ExtResource("13_xbvv8")]
-position = Vector2(168, 88)
-
-[node name="Chair68" parent="TileMap/Chairs" instance=ExtResource("13_xbvv8")]
-position = Vector2(168, 104)
-
-[node name="Chair69" parent="TileMap/Chairs" instance=ExtResource("13_xbvv8")]
 position = Vector2(168, 152)
 
-[node name="Chair70" parent="TileMap/Chairs" instance=ExtResource("13_xbvv8")]
+[node name="Chair67" parent="TileMap/Chairs" instance=ExtResource("13_xbvv8")]
 position = Vector2(168, 168)
 
 [node name="Chair71" parent="TileMap/Chairs" instance=ExtResource("13_xbvv8")]
-position = Vector2(168, 120)
-
-[node name="Chair72" parent="TileMap/Chairs" instance=ExtResource("13_xbvv8")]
 position = Vector2(168, 184)
 
 [node name="Chair73" parent="TileMap/Chairs" instance=ExtResource("13_xbvv8")]
-position = Vector2(184, 56)
-
-[node name="Chair74" parent="TileMap/Chairs" instance=ExtResource("13_xbvv8")]
-position = Vector2(184, 72)
-
-[node name="Chair75" parent="TileMap/Chairs" instance=ExtResource("13_xbvv8")]
-position = Vector2(184, 88)
-
-[node name="Chair76" parent="TileMap/Chairs" instance=ExtResource("13_xbvv8")]
-position = Vector2(184, 104)
-
-[node name="Chair77" parent="TileMap/Chairs" instance=ExtResource("13_xbvv8")]
 position = Vector2(184, 152)
 
-[node name="Chair78" parent="TileMap/Chairs" instance=ExtResource("13_xbvv8")]
+[node name="Chair75" parent="TileMap/Chairs" instance=ExtResource("13_xbvv8")]
 position = Vector2(184, 168)
 
 [node name="Chair79" parent="TileMap/Chairs" instance=ExtResource("13_xbvv8")]
-position = Vector2(184, 120)
-
-[node name="Chair80" parent="TileMap/Chairs" instance=ExtResource("13_xbvv8")]
 position = Vector2(184, 184)
 
-[node name="Chair81" parent="TileMap/Chairs" instance=ExtResource("13_xbvv8")]
-position = Vector2(200, 56)
-
-[node name="Chair82" parent="TileMap/Chairs" instance=ExtResource("13_xbvv8")]
-position = Vector2(200, 72)
-
-[node name="Chair83" parent="TileMap/Chairs" instance=ExtResource("13_xbvv8")]
-position = Vector2(200, 88)
-
-[node name="Chair84" parent="TileMap/Chairs" instance=ExtResource("13_xbvv8")]
-position = Vector2(200, 104)
-
-[node name="Chair85" parent="TileMap/Chairs" instance=ExtResource("13_xbvv8")]
-position = Vector2(200, 152)
-
-[node name="Chair86" parent="TileMap/Chairs" instance=ExtResource("13_xbvv8")]
-position = Vector2(200, 168)
-
-[node name="Chair87" parent="TileMap/Chairs" instance=ExtResource("13_xbvv8")]
-position = Vector2(200, 120)
-
-[node name="Chair88" parent="TileMap/Chairs" instance=ExtResource("13_xbvv8")]
-position = Vector2(200, 184)
-
-[node name="Chair62" parent="TileMap/Chairs" instance=ExtResource("13_xbvv8")]
-position = Vector2(120, 184)
-
-[node name="Chair63" parent="TileMap/Chairs" instance=ExtResource("13_xbvv8")]
-position = Vector2(72, 184)
-
-[node name="Chair64" parent="TileMap/Chairs" instance=ExtResource("13_xbvv8")]
-position = Vector2(40, 184)
-
 [node name="Chair" parent="TileMap/Chairs" instance=ExtResource("13_xbvv8")]
+position = Vector2(136, 152)
+
+[node name="WinTiles" type="Node" parent="."]
+
+[node name="WinTile" parent="WinTiles" instance=ExtResource("16_2prn8")]
+position = Vector2(24, 56)
+
+[node name="WinTile2" parent="WinTiles" instance=ExtResource("16_2prn8")]
+position = Vector2(40, 56)
+
+[node name="WinTile3" parent="WinTiles" instance=ExtResource("16_2prn8")]
+position = Vector2(56, 56)
+
+[node name="WinTile4" parent="WinTiles" instance=ExtResource("16_2prn8")]
+position = Vector2(72, 56)
+
+[node name="WinTile5" parent="WinTiles" instance=ExtResource("16_2prn8")]
+position = Vector2(88, 56)
+
+[node name="WinTile6" parent="WinTiles" instance=ExtResource("16_2prn8")]
+position = Vector2(24, 88)
+
+[node name="WinTile7" parent="WinTiles" instance=ExtResource("16_2prn8")]
+position = Vector2(40, 88)
+
+[node name="WinTile8" parent="WinTiles" instance=ExtResource("16_2prn8")]
+position = Vector2(56, 88)
+
+[node name="WinTile9" parent="WinTiles" instance=ExtResource("16_2prn8")]
+position = Vector2(72, 88)
+
+[node name="WinTile10" parent="WinTiles" instance=ExtResource("16_2prn8")]
+position = Vector2(88, 88)
+
+[node name="WinTile11" parent="WinTiles" instance=ExtResource("16_2prn8")]
+position = Vector2(24, 120)
+
+[node name="WinTile12" parent="WinTiles" instance=ExtResource("16_2prn8")]
+position = Vector2(40, 120)
+
+[node name="WinTile13" parent="WinTiles" instance=ExtResource("16_2prn8")]
+position = Vector2(56, 120)
+
+[node name="WinTile14" parent="WinTiles" instance=ExtResource("16_2prn8")]
+position = Vector2(72, 120)
+
+[node name="WinTile15" parent="WinTiles" instance=ExtResource("16_2prn8")]
+position = Vector2(88, 120)
+
+[node name="WinTile16" parent="WinTiles" instance=ExtResource("16_2prn8")]
+position = Vector2(120, 56)
+
+[node name="WinTile17" parent="WinTiles" instance=ExtResource("16_2prn8")]
 position = Vector2(136, 56)
 
-[node name="Chair9" parent="TileMap/Chairs" instance=ExtResource("13_xbvv8")]
-position = Vector2(136, 72)
+[node name="WinTile18" parent="WinTiles" instance=ExtResource("16_2prn8")]
+position = Vector2(152, 56)
 
-[node name="Node" type="Node" parent="TileMap"]
+[node name="WinTile19" parent="WinTiles" instance=ExtResource("16_2prn8")]
+position = Vector2(168, 56)
 
-[node name="WinTile" parent="TileMap/Node" instance=ExtResource("16_2prn8")]
-position = Vector2(168, 40)
+[node name="WinTile20" parent="WinTiles" instance=ExtResource("16_2prn8")]
+position = Vector2(184, 56)
 
-[node name="WinTile2" parent="TileMap/Node" instance=ExtResource("16_2prn8")]
-position = Vector2(152, 40)
+[node name="WinTile21" parent="WinTiles" instance=ExtResource("16_2prn8")]
+position = Vector2(120, 88)
+
+[node name="WinTile22" parent="WinTiles" instance=ExtResource("16_2prn8")]
+position = Vector2(136, 88)
+
+[node name="WinTile23" parent="WinTiles" instance=ExtResource("16_2prn8")]
+position = Vector2(152, 88)
+
+[node name="WinTile24" parent="WinTiles" instance=ExtResource("16_2prn8")]
+position = Vector2(168, 88)
+
+[node name="WinTile25" parent="WinTiles" instance=ExtResource("16_2prn8")]
+position = Vector2(184, 88)
+
+[node name="WinTile26" parent="WinTiles" instance=ExtResource("16_2prn8")]
+position = Vector2(120, 120)
+
+[node name="WinTile27" parent="WinTiles" instance=ExtResource("16_2prn8")]
+position = Vector2(136, 120)
+
+[node name="WinTile28" parent="WinTiles" instance=ExtResource("16_2prn8")]
+position = Vector2(152, 120)
+
+[node name="WinTile29" parent="WinTiles" instance=ExtResource("16_2prn8")]
+position = Vector2(168, 120)
+
+[node name="WinTile30" parent="WinTiles" instance=ExtResource("16_2prn8")]
+position = Vector2(184, 120)
 
 [node name="Decor" type="TileMap" parent="."]
 position = Vector2(8, 8)

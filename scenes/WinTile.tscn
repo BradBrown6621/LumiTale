@@ -1,12 +1,47 @@
-[gd_scene load_steps=3 format=3 uid="uid://kccoyxxar0gj"]
+[gd_scene load_steps=7 format=3 uid="uid://kccoyxxar0gj"]
 
 [ext_resource type="Script" path="res://scripts/WinTile.gd" id="1_iecjo"]
+[ext_resource type="Texture2D" uid="uid://cbj4f1yvy6sl8" path="res://assets/WinTile.png" id="2_btxfg"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_bbgiw"]
 size = Vector2(14, 14)
 
+[sub_resource type="AtlasTexture" id="AtlasTexture_tcoga"]
+atlas = ExtResource("2_btxfg")
+region = Rect2(0, 16, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_16ajd"]
+atlas = ExtResource("2_btxfg")
+region = Rect2(0, 0, 16, 16)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_xyevq"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_tcoga")
+}],
+"loop": true,
+"name": &"activated",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_16ajd")
+}],
+"loop": true,
+"name": &"inactive",
+"speed": 5.0
+}]
+
 [node name="WinTile" type="Area2D"]
+light_mask = 2
+visibility_layer = 2
+z_index = 2
 script = ExtResource("1_iecjo")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("RectangleShape2D_bbgiw")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_xyevq")
+animation = &"inactive"

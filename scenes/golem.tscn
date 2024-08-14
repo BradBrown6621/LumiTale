@@ -375,6 +375,7 @@ animations = [{
 size = Vector2(16, 16)
 
 [node name="Golem" type="Sprite2D"]
+z_index = 1
 position = Vector2(16, 16)
 texture = SubResource("AtlasTexture_1jgyj")
 script = SubResource("GDScript_71gmq")

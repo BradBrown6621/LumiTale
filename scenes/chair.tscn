@@ -191,6 +191,8 @@ animations = [{
 size = Vector2(16, 16)
 
 [node name="Chair" type="CharacterBody2D" groups=["pushable"]]
+top_level = true
+z_index = 1
 script = ExtResource("1_34hsx")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]

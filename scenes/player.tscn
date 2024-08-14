@@ -162,6 +162,10 @@ animations = [{
 }]
 
 [node name="CharacterBody2D" type="CharacterBody2D"]
+top_level = true
+light_mask = 2
+visibility_layer = 2
+z_index = 1
 script = ExtResource("1_itbiy")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
