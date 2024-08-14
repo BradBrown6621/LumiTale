@@ -10,7 +10,6 @@ class_name Player
 @onready var golem = $"../Golem"
 
 func _process(_delta):
-	# ADD ANIMATIONS FOR MOVEMENT
 	# ADD SOUNDS FOR MOVEMENT
 	if Input.is_action_just_pressed("player_right", true):
 		movement_direction = "right"
@@ -45,6 +44,9 @@ func _process(_delta):
 			print("Grabbed object: ", grabbed_object)
 		else:
 			grabbed_object = null
+	elif Input.is_action_just_pressed("player_grabbed_object_rotate"):
+		if grabbed_object:
+			grabbed_object.rotateClockwise()
 	elif Input.is_action_just_pressed("player_golem_activate"):
 		golem.activate()
 	else:
@@ -52,25 +54,35 @@ func _process(_delta):
 
 	if movement_direction != null:
 		
-		var objectPlayerFacing = getObject(facing_direction)
-		# Check if object attempting to push is not grabbed
-		if objectPlayerFacing != null and objectPlayerFacing != grabbed_object:
-		# Attempt to push object and move
+		var objectPlayerFacing = getObject(movement_direction) # Represented by @
+		var objectGrabbedFacing
+		var successfulPush = 0
+		if grabbed_object != null:
+			grabbed_object = grabbed_object
+			objectGrabbedFacing = grabbed_object.getObject(movement_direction) # Represented by #
+
+		# If in this configuration:
+		# @# ->
+		if objectPlayerFacing == grabbed_object:
 			push(movement_direction)
-		# Otherwise, attempt to push grabbed object
+
+		# If in this configuration:
+		# #@ ->
+		elif objectGrabbedFacing == self:
+			successfulPush = grabbed_object.push(movement_direction)
+
+		# Finally, if in this configuration (or any reflections):
+		# #
+		# @
+
 		elif grabbed_object:
-			if (movement_direction == "up" and facing_direction == "down") or (movement_direction == "down" and facing_direction == "up") or (movement_direction == "right" and facing_direction == "left") or  (movement_direction == "left" and facing_direction == "right"):
-				# If we need to pull a tile, we just initiate a push on that tile and move the tile being "pulled"
-				grabbed_object.push(movement_direction)
-			elif movement_direction == facing_direction:
-				grabbed_object.push(movement_direction)
-				push(movement_direction)
-			else:
-				push(movement_direction)
-				grabbed_object.push(movement_direction)
-				
+			push(movement_direction)
+			successfulPush = grabbed_object.push(movement_direction)
 		else:
 			push(movement_direction)
+		
+		if successfulPush == -1:
+			grabbed_object = null
 
 		facing_direction = movement_direction
 	super._process(_delta)

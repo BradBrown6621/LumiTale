@@ -1,7 +1,7 @@
 [gd_scene load_steps=26 format=3 uid="uid://b7aq8eamivh18"]
 
-[ext_resource type="Texture2D" uid="uid://dpd6m4fyx3iq5" path="res://assets/Grass.png" id="1_w3kmo"]
-[ext_resource type="Texture2D" uid="uid://busqjj6o18246" path="res://assets/golemTilesheet.png" id="2_erad4"]
+[ext_resource type="Texture2D" uid="uid://cojytxmrjmf8h" path="res://assets/Grass.png" id="1_w3kmo"]
+[ext_resource type="Texture2D" uid="uid://cc2v6mkvtdqke" path="res://assets/golemTilesheet.png" id="2_erad4"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_1jgyj"]
 atlas = ExtResource("1_w3kmo")
@@ -9,6 +9,7 @@ region = Rect2(128, 96, 16, 16)
 
 [sub_resource type="GDScript" id="GDScript_71gmq"]
 script/source = "extends Sprite2D
+
 class_name Golem
 
 @onready var tile_map = $\"../TileMap\"

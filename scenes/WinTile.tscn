@@ -1,7 +1,7 @@
 [gd_scene load_steps=7 format=3 uid="uid://kccoyxxar0gj"]
 
 [ext_resource type="Script" path="res://scripts/WinTile.gd" id="1_iecjo"]
-[ext_resource type="Texture2D" uid="uid://cbj4f1yvy6sl8" path="res://assets/WinTile.png" id="2_btxfg"]
+[ext_resource type="Texture2D" uid="uid://s6pxdlod77xr" path="res://assets/WinTile.png" id="2_btxfg"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_bbgiw"]
 size = Vector2(14, 14)

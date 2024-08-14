@@ -1,6 +1,6 @@
 [gd_scene load_steps=20 format=3 uid="uid://councj771xmot"]
 
-[ext_resource type="Texture2D" uid="uid://dpd6m4fyx3iq5" path="res://assets/Grass.png" id="2_tvcjy"]
+[ext_resource type="Texture2D" uid="uid://cojytxmrjmf8h" path="res://assets/Grass.png" id="2_tvcjy"]
 [ext_resource type="Texture2D" uid="uid://mu0yj0qbpnba" path="res://assets/Sprout Lands - Sprites - Basic pack/Tilesets/Wooden_House_Roof_Tilset.png" id="3_pj7rg"]
 [ext_resource type="Texture2D" uid="uid://btmnmt21vgb4h" path="res://assets/Sprout Lands - Sprites - Basic pack/Tilesets/Doors.png" id="4_5wjj8"]
 [ext_resource type="Texture2D" uid="uid://d2xxqa5vxkw0l" path="res://assets/Texture/TX Tileset Stone Ground.png" id="5_opy7e"]
