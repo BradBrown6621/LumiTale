@@ -42,6 +42,7 @@ LumiTale was crafted using **Godot Engine 4.2.2.0** for **Windows Desktop x86_64
 ### Beta Challenge
 
 - Set the chairs up in rows facing the same direction!
+- **Toggle Win Conditions**: Press `Q` to reveal placement and direction tiles for chair placement.
 
 ### Special Character: The Golem
 
