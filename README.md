@@ -3,6 +3,7 @@
 ---
 
 ## 🎮 About
+![Screenshot 2025-04-24 151359](https://github.com/user-attachments/assets/db8d7e21-72d7-4a73-ae45-08e4d7727c81)
 
 LumiTale is a playful homage to Atlas School Tulsa, presented as a top-down 2D puzzler. Dive into a world where every action counts, and every object can be manipulated to solve intricate puzzles. Navigate through familiar Atlas School scenes, challenge your problem-solving skills, and even program a helpful Golem to assist you on your journey.
 
